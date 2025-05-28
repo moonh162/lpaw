@@ -35,3 +35,64 @@ header {
 h2 {
   color: #8B0000;
 }
+
+/* Estilo base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffaf3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffcc99;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.receita {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.receita img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .receita {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+
